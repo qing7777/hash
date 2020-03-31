@@ -1,0 +1,49 @@
+{
+    "name": "qing7777/hash",
+    "type": "package",
+    "description": "Hyperf-ext hash Package",
+    "keywords": [
+        "Hyperf Hash",
+        "Hash"
+    ],
+    "homepage": "https://github.com/qing7777/hash",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "qing7260",
+            "email": "qing7260@outlook.com",
+            "homepage": "https://github.com/qing7260",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "ext-swoole": ">=4.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.1",
+        "mockery/mockery": "0.9.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Qing7777\\Hash\\": "src/"
+        },
+        "files": [
+            "src/ConfigProvider.php"
+        ]
+    },
+    "extra": {
+        "hyperf": {
+            "config": "Qing7777\\Hash\\ConfigProvider"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests"
+        ],
+        "psr-4": {
+            "Qing7777\\Test\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev"
+}
