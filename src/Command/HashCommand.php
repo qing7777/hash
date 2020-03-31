@@ -32,7 +32,7 @@ class HashCommand extends HyperfCommand
         // 从 $input 获取 config 参数
         $argument = $this->input->getOption('config');
         if ($argument) {
-            $this->copySource(__DIR__ . '/../../publish/hashing.php.php', BASE_PATH . '/config/autoload/hashing.php.php');
+            $this->copySource(__DIR__ . '/../../publish/hashing.php', BASE_PATH . '/config/autoload/hashing.php');
             $this->line('The hash configuration file has been generated', 'info');
         }
     }
